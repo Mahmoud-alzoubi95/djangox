@@ -1,1 +1,1 @@
-PR : https://github.com/Mahmoud-alzoubi95/djangox/pull/2
+PR:( https://github.com/Mahmoud-alzoubi95/djangox/pull/3 )
