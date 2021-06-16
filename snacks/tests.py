@@ -32,7 +32,7 @@ class SnacksTests(TestCase):
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "first order")
-        self.assertTemplateUsed(response, "snacks_k/snack_list.html")
+        self.assertTemplateUsed(response, "snacks_t/snack_list.html")
 
     def test_snack_detail_view(self):
         response = self.client.get(reverse("snacks_detail", args="1"))
@@ -40,7 +40,7 @@ class SnacksTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(no_response.status_code, 404)
         self.assertContains(response, "purchaser: Mahmoud@email.com")
-        self.assertTemplateUsed(response, "snacks_k/snacks_detail.html")
+        self.assertTemplateUsed(response, "snacks_t/snacks_detail.html")
 
     def test_snack_create_view(self):
         response = self.client.post(
